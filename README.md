@@ -34,7 +34,7 @@ O processo de análise é conduzido por uma colaboração de agentes de IA disti
 -   **Flask (versão 3.1.1):** Microframework web para Python.
 -   **google-generativeai (versão 1.15.0):** Biblioteca para interagir com os modelos Gemini.
 -   **HTML5:** Linguagem de marcação para a estrutura da web.
-    -   **CSS3:** Para o estilo da interface web.
+-   **CSS3:** Para o estilo da interface web.
 
 ## 5. Configuração e Instalação
 
