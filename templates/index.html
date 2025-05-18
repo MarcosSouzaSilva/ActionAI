@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionIA - Invista com Inteligência</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+    <header class="bg-indigo-500 dark:bg-indigo-700 text-white py-4 md:py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-semibold">ActionIA</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#sobre" class="hover:text-indigo-200 dark:hover:text-indigo-300 transition duration-300">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:text-indigo-200 dark:hover:text-indigo-300 transition duration-300">Serviços</a></li>
+                    <li><a href="#recursos" class="hover:text-indigo-200 dark:hover:text-indigo-300 transition duration-300">Recursos</a></li>
+                    <li><a href="#contato" class="hover:text-indigo-200 dark:hover:text-indigo-300 transition duration-300">Contato</a></li>
+                    <li><a href="action.html" class="hover:text-indigo-200 dark:hover:text-indigo-300 transition duration-300">Try now</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="menu-mobile" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="menu-close" class="text-white focus:outline-none" aria-label="Fechar Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#sobre" class="block text-lg text-white hover:text-indigo-300 dark:hover:text-indigo-300 transition duration-300">Sobre</a></li>
+                    <li><a href="#servicos" class="block text-lg text-white hover:text-indigo-300 dark:hover:text-indigo-300 transition duration-300">Serviços</a></li>
+                    <li><a href="#recursos" class="block text-lg text-white hover:text-indigo-300 dark:hover:text-indigo-300 transition duration-300">Recursos</a></li>
+                    <li><a href="#contato" class="block text-lg text-white hover:text-indigo-300 dark:hover:text-indigo-300 transition duration-300">Contato</a></li>
+                    <li><a href="action.html" class="hover:text-indigo-200 dark:hover:text-indigo-300 transition duration-300">Try now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="sobre" class="bg-gray-100 dark:bg-gray-800 py-16 md:py-20">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Sobre a ActionIA</h2>
+                <p class="text-gray-700 dark:text-gray-300 text-lg">
+                    A ActionIA é uma plataforma inovadora que utiliza inteligência artificial para fornecer análises e recomendações de investimentos no mercado de ações. Nossa missão é capacitar investidores de todos os níveis a tomar decisões informadas e alcançar seus objetivos financeiros. Priorizamos a confidencialidade e segurança dos dados de nossos clientes, garantindo uma experiência de investimento segura e confiável.
+                </p>
+            </div>
+            <div>
+                <img src="https://placehold.co/600x400/EEE/31343C" alt="Sobre a ActionIA" class="rounded-lg shadow-lg">
+                </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="bg-gray-50 dark:bg-gray-900 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-semibold text-indigo-600 dark:text-indigo-400 mb-8 text-center">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Análise de Ações com IA</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Utilizamos algoritmos avançados de IA para analisar o potencial de crescimento de diversas ações, fornecendo insights valiosos para suas decisões de investimento.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Recomendações de Compra e Venda</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Receba recomendações personalizadas de compra e venda de ações, baseadas em análises preditivas e dados de mercado em tempo real.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Portfólio Inteligente</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                       Construa e otimize seu portfólio de investimentos com a ajuda da IA, diversificando seus ativos e maximizando seus retornos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="bg-gray-100 dark:bg-gray-800 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-semibold text-indigo-600 dark:text-indigo-400 mb-8 text-center">Recursos</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Blog de Investimentos</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        Acesse artigos e guias sobre o mercado de ações, estratégias de investimento e análises de tendências.
+                    </p>
+                     <a href="#" class="text-indigo-500 dark:text-indigo-300 hover:underline">Visite o Blog</a>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Webinars e Cursos</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                       Participe de webinars e cursos online ministrados por especialistas do mercado financeiro e aprenda a investir com confiança.
+                    </p>
+                    <a href="#" class="text-indigo-500 dark:text-indigo-300 hover:underline">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-gray-50 dark:bg-gray-900 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-semibold text-indigo-600 dark:text-indigo-400 mb-8 text-center">Contato</h2>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 md:p-10">
+                <p class="text-gray-700 dark:text-gray-300 text-lg mb-6 text-center">
+                    Entre em contato conosco para saber mais sobre a ActionIA e como podemos ajudar você a alcançar seus objetivos de investimento.
+                </p>
+                <form>
+                    <div class="mb-4">
+                        <label for="nome" class="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-700">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-700">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensagem" class="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-700"></textarea>
+                    </div>
+                    <button type="submit" class="bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-800 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-full">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="login" class="bg-gray-100 dark:bg-gray-900 py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-semibold text-indigo-600 dark:text-indigo-400 mb-8 text-center">Login</h2>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 md:p-10 max-w-md mx-auto">
+                <form>
+                    <div class="mb-4">
+                        <label for="login-email" class="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="login-email" name="login-email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-700">
+                    </div>
+                    <div class="mb-6">
+                        <label for="login-senha" class="block text-gray-700 dark:text-gray-200 text-sm font-bold mb-2">Senha:</label>
+                        <input type="password" id="login-senha" name="login-senha" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-700">
+                    </div>
+                    <button type="submit" class="bg-indigo-500 dark:bg-indigo-600 hover:bg-indigo-700 dark:hover:bg-indigo-800 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-full">
+                        Entrar
+                    </button>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="text-indigo-500 dark:text-indigo-300 hover:underline text-sm">Esqueceu sua senha?</a>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-700 dark:text-gray-300 text-sm">Não tem uma conta? <a href="#" class="text-indigo-500 dark:text-indigo-300 hover:underline">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 ActionIA. Todos os direitos reservados. <a href="#" class="text-indigo-500 dark:text-indigo-300 hover:underline">Política de Privacidade</a> | <a href="#" class="text-indigo-500 dark:text-indigo-300 hover:underline">Termos de Serviço</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const menuMobile = document.getElementById('menu-mobile');
+        const navLinks = document.querySelectorAll('#menu-mobile a');
+        const navLinksHeader = document.querySelectorAll('header nav ul li a');
+
+
+        function toggleMenu() {
+            menuMobile.classList.toggle('hidden');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+        navLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+
+        document.addEventListener('click', (event) => {
+            if (!menuMobile.classList.contains('hidden') && !menuMobile.contains(event.target) && event.target !== menuToggle) {
+                toggleMenu();
+            }
+        });
+    </script>
+</body>
+</html>
