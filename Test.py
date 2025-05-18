@@ -3,7 +3,7 @@ from google import genai
 from google.genai import types
 from flask import Flask, request, render_template
 
-GOOGLE_API_KEY = "CHAVE DA API DO GEMINI"
+GOOGLE_API_KEY = "AIzaSyCiDrREvjMOn_1jbogerWf3xMAMM26f4b0"
 
 MODELO_PADRAO = "gemini-2.0-flash"
 # URL para análise do gráfico
@@ -60,10 +60,13 @@ def executar_analise(acao):
     pesquisa2 = pesquisador2.enviar_mensagem(prompt_pesquisador2)
 
     prompt_avaliador = (
-        f"Com base nas informações dos Agentes '{pesquisador1.nome}' e '{pesquisador2.nome}', e analisando o gráfico de {acao} em {URL_GRAFICO.format(acao=acao.lower())}, forneça sua recomendação de compra, preço-alvo e potencial de alta **APENAS** no seguinte formato:\n\n"
+        f"Com base nas informações dos Agentes '{pesquisador1.nome}' e '{pesquisador2.nome}', e analisando o gráfico de {acao} em {URL_GRAFICO.format(acao=acao.lower())}, FORNEÇA SUA recomendação de compra, preço-alvo e potencial de alta **APENAS** NO SEGUINTE FORMATO:\n\n"
         "Recomendação de compra : X\n"
         "Preço-alvo : Y\n"
-        "Potencial de alta : Z%\n")
+        "Potencial de alta : Z%\n"
+        "\n"
+        "Retorne a sua resposta estritamente neste formato, sem texto adicional."
+    )
 
 
     avaliacao = avaliador.enviar_mensagem(prompt_avaliador)
